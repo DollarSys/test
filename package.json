@@ -1,0 +1,33 @@
+{
+  "name": "verifying",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot/index.js",
+  "scripts": {
+    "start": "nodemon website/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "discord-oauth2": "^2.10.1",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "glob": "^8.0.3",
+    "mongoose": "^6.7.3",
+    "ms": "^2.1.3",
+    "node-fetch": "^2.6.7",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "signale": "^1.4.0",
+    "util": "^0.12.5",
+    "wio.db": "^4.0.22"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

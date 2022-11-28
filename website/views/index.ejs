@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+            }
+            body {
+                background-color: black;
+                color: white;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+            }
+            .button-30 {
+                align-items: center;
+                appearance: none;
+                background-color: #fcfcfd;
+                border-radius: 4px;
+                border-width: 0;
+                box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+                box-sizing: border-box;
+                color: #36395a;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: "JetBrains Mono", monospace;
+                height: 48px;
+                margin-top: 20px;
+                justify-content: center;
+                line-height: 1;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transition: box-shadow 0.15s, transform 0.15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow, transform;
+                font-size: 18px;
+            }
+            .button-30:focus {
+                box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+            }
+            .button-30:hover {
+                box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+                transform: translateY(-2px);
+            }
+            .button-30:active {
+                box-shadow: #d6d6e7 0 3px 7px inset;
+                transform: translateY(2px);
+            }
+            .hi {
+                margin: auto;
+                height: 200px;
+                width: 200px;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        </style>
+        <title>Verifying System</title>
+    </head>
+    <body>
+        <div class="hi">
+            <p>Thank you for verifying <%= username %>.</p>
+            <center><button class="button-30" role="button" onclick="logout()">Logout</button></center>
+        </div>
+        <script>
+            function logout() {
+                window.location.href = "/logout";
+            }
+        </script>
+    </body>
+</html>
